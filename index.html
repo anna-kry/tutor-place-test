@@ -13,13 +13,13 @@
         <p class="header__logo-text">AI</p>
       </a>
       <nav class="header__menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="#0">Главная</a></li>
-        <li class="menu__item"><a href="#0">Преимущества</a></li>
-        <li class="menu__item">
-          <button class="menu__access-btn">Получить доступ</button>
-        </li>
-      </ul>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#0">Главная</a></li>
+          <li class="menu__item"><a href="#0">Преимущества</a></li>
+          <li class="menu__item">
+            <button class="menu__access-btn">Получить доступ</button>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -27,7 +27,7 @@
         <div class="hero__content">
           <h1><span>Нейросеть</span>может все!</h1>
           <p class="hero__text">Мы уже живем в этой удивительной реальности</p>
-          <button class="hero__access-btn">Погрузиться в новый мир</button>
+          <button class="button button--primary hero__button">Погрузиться в новый мир</button>
         </div>
         <img
           class="hero__picture"
@@ -40,8 +40,9 @@
         <div class="advantages__bg-text">Преимущества</div>
         <h2>Преимущества курса</h2>
         <p class="advantages__text">
-          Поможем создать <span class="advantages__accent">корректный промт</span>,
-          чтобы вы получили <br />
+          Поможем создать
+          <span class="advantages__accent">корректный промт</span>, чтобы вы
+          получили <br />
           максимально корректный вариант под ваши нужды!
         </p>
 
@@ -112,5 +113,32 @@
         </div>
       </section>
     </main>
+
+    <div class="popup _hidden">
+      <div class="popup__overlay"></div>
+      <div class="popup__content">
+        <button class="popup__close"></button>
+        <p class="popup__title">Овладей нейросетями!</p>
+        <p class="popup__text">Получи в подарок доступ ко всем курсам</p>
+        <img
+          class="popup__picture"
+          src="images/Gift.svg"
+          alt="схематичная картинка ноутбука, от которого исходит свет и рядом буквы AI"
+        />
+        <form class="popup__form">
+          <input
+            class="popup__input"
+            type="email"
+            name="email"
+            placeholder="Введите e-mail"
+            required
+          />
+          <span class="popup__error">ошибка</span>
+          <button class="button button--primary popup__button">
+            <span class="text-button">Получить доступ</span>
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
