@@ -152,6 +152,15 @@ body {
   cursor: pointer;
 }
 
+.header__close {
+  display: none;
+}
+
+.header__menu--open .header__close {
+  display: block;
+  align-self: flex-end;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -521,17 +530,44 @@ body {
   }
 
   .header__menu {
+    position: fixed;
+    inset: 0;
+    background: #0c0d12;
+
     display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+
+    padding: 30px;
+    z-index: 1000;
   }
 
   .header__menu--open {
-    display: block;
+    display: flex;
+  }
+
+  .header__close {
+    align-self: flex-end;
+
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
   }
 
   .menu__list {
-    flex-direction: column;
-    gap: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.menu__item {
+  width: 100%;
+  text-align: center;
+}
+
 
   .header {
     display: flex;

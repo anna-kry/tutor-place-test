@@ -14,6 +14,8 @@
       </a>
       <button class="header__burger" aria-label="Открыть меню">☰</button>
       <nav class="header__menu header__menu--closed">
+         <button class="header__close " aria-label="Закрыть меню">✕</button>
+
         <ul class="menu__list">
           <li class="menu__item text--body-large"><a href="#0">Главная</a></li>
           <li class="menu__item text--body-large">
@@ -131,7 +133,7 @@
       </section>
     </main>
 
-    <div class="popup _hidde">
+    <div class="popup _hidden">
       <div class="popup__overlay"></div>
       <div class="popup__content">
         <button class="popup__close"></button>
@@ -159,5 +161,9 @@
         </form>
       </div>
     </div>
+
+
+    <script src="js/burger-menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
