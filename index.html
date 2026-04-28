@@ -10,14 +10,19 @@
     <header class="header container">
       <a class="header__logo" href="#0">
         <img class="header__logo-image" src="images/Logo.svg" alt="AI logo" />
-        <p class="header__logo-text">AI</p>
+        <span class="text--subheading">AI</span>
       </a>
-      <nav class="header__menu">
+      <button class="header__burger" aria-label="Открыть меню">☰</button>
+      <nav class="header__menu header__menu--closed">
         <ul class="menu__list">
-          <li class="menu__item"><a href="#0">Главная</a></li>
-          <li class="menu__item"><a href="#0">Преимущества</a></li>
+          <li class="menu__item text--body-large"><a href="#0">Главная</a></li>
+          <li class="menu__item text--body-large">
+            <a href="#0">Преимущества</a>
+          </li>
           <li class="menu__item">
-            <button class="menu__access-btn">Получить доступ</button>
+            <button class="menu__access-btn text--body-small">
+              Получить доступ
+            </button>
           </li>
         </ul>
       </nav>
@@ -25,9 +30,15 @@
     <main>
       <section class="hero container">
         <div class="hero__content">
-          <h1><span>Нейросеть</span>может все!</h1>
-          <p class="hero__text">Мы уже живем в этой удивительной реальности</p>
-          <button class="button button--primary hero__button">Погрузиться в новый мир</button>
+          <h1 class="hero__title title--heading">
+            <span class="title__accent title--hero">Нейросеть</span><br/>может все!
+          </h1>
+          <p class="hero__text text--body-large">
+            Мы уже живем в этой удивительной реальности
+          </p>
+          <button class="button button--primary text--body-large hero__button">
+            Погрузиться в новый мир
+          </button>
         </div>
         <img
           class="hero__picture"
@@ -38,11 +49,11 @@
 
       <section class="advantages">
         <div class="advantages__bg-text">Преимущества</div>
-        <h2>Преимущества курса</h2>
-        <p class="advantages__text">
+        <h2 class="advantages__title title--heading">Преимущества курса</h2>
+        <p class="advantages__text text--body-large">
           Поможем создать
-          <span class="advantages__accent">корректный промт</span>, чтобы вы
-          получили <br />
+          <span class="advantages__text--accent">корректный промт</span>, чтобы
+          вы получили <br />
           максимально корректный вариант под ваши нужды!
         </p>
 
@@ -54,9 +65,11 @@
               alt="Иконка с возрастающим графиком и маленьким флажком на вершине"
             />
 
-            <h3 class="advantage__title">Хотите открыть бизнес?</h3>
+            <h3 class="advantage__title text--body-large">
+              Хотите открыть бизнес?
+            </h3>
 
-            <div class="advantage__text">
+            <div class="advantage__text text--body-small">
               Нейросеть поможет составить бизнес-план, рассчитать расходы,
               нарисовать логотип, найти место получше и станет вашим главным
               деловым партнером
@@ -70,9 +83,11 @@
               alt="Иконка чемоданом и биркой на нём"
             />
 
-            <h3 class="advantage__title">Мечтаете об отпуске?</h3>
+            <h3 class="advantage__title text--body-large">
+              Мечтаете об отпуске?
+            </h3>
 
-            <div class="advantage__text">
+            <div class="advantage__text text--body-small">
               Нейросеть поможет найти место по вашим запросам, выбрать наилучший
               сезон, собрать чемодан, подыскать где остановиться и сделать ваш
               отпуск незабываемым
@@ -86,11 +101,11 @@
               alt="Иконка с планшетом, на котором написан чек лист и галочкой"
             />
 
-            <h3 class="advantage__title">
+            <h3 class="advantage__title text--body-large">
               Вы студент и нуждаетесь в помощи в учебе?
             </h3>
 
-            <div class="advantage__text">
+            <div class="advantage__text text--body-small">
               Нет проблем! Нейросеть — ваш лучший друг, который поможет написать
               курсовую, решить сложный тест и подготовиться к экзаменам
             </div>
@@ -103,9 +118,11 @@
               alt="Иконка с контуром головного мозга и сердечком"
             />
 
-            <h3 class="advantage__title">Интересует здоровый образ жизни?</h3>
+            <h3 class="advantage__title text--body-large">
+              Интересует здоровый образ жизни?
+            </h3>
 
-            <div class="advantage__text">
+            <div class="advantage__text text--body-small">
               Нейросеть поделится советами по сбалансированному питанию,
               безопасным тренировкам и поддержке мотивации
             </div>
@@ -114,12 +131,14 @@
       </section>
     </main>
 
-    <div class="popup _hidden">
+    <div class="popup _hidde">
       <div class="popup__overlay"></div>
       <div class="popup__content">
         <button class="popup__close"></button>
-        <p class="popup__title">Овладей нейросетями!</p>
-        <p class="popup__text">Получи в подарок доступ ко всем курсам</p>
+        <p class="popup__title text--subheading">Овладей нейросетями!</p>
+        <p class="popup__text text--body-large">
+          Получи в подарок доступ ко всем курсам
+        </p>
         <img
           class="popup__picture"
           src="images/Gift.svg"
@@ -127,14 +146,14 @@
         />
         <form class="popup__form">
           <input
-            class="popup__input"
+            class="popup__input text--body-large"
             type="email"
             name="email"
             placeholder="Введите e-mail"
             required
           />
-          <span class="popup__error">ошибка</span>
-          <button class="button button--primary popup__button">
+          <span class="popup__error text--body-small">ошибка</span>
+          <button class="button button--primary text--body-large popup__button">
             <span class="text-button">Получить доступ</span>
           </button>
         </form>
